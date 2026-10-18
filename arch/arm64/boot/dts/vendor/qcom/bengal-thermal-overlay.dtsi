@@ -2,7 +2,7 @@
 
 &thermal_zones {
 	pm6125-tz {
-		cooling-maps {
+/*		cooling-maps {
 			trip0_cpu0 {
 				trip = <&pm6125_trip0>;
 				cooling-device =
@@ -51,7 +51,7 @@
 				trip = <&pm6125_trip1>;
 				cooling-device = <&cpu7_isolate 1 1>;
 			};
-		};
+		}; */
 	};
 };
 
