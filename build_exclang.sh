@@ -11,11 +11,11 @@ CLANG_DIR="$HOME/clang/greenforce-clang"
 export PATH="$CLANG_DIR/bin:$PATH"
 
 export KBUILD_BUILD_USER="anomaly-arc"
-export KBUILD_BUILD_HOST="ArchLinux"
+export KBUILD_BUILD_HOST="Mint"
 export ARCH=arm64
 export SUBARCH=arm64
 
-ZIP_NAME="Sodium-Kernel-$(date +%Y%m%d-%H%M).zip"
+ZIP_NAME="RAVE-$(date +%Y%m%d-%H%M).zip"
 AK3_DIR="$(pwd)/../anykernel"
 
 # ====================================================
@@ -31,7 +31,7 @@ if [ -x "$(command -v ccache)" ]; then
     export CCACHE_EXEC=$(which ccache)
     ccache -M $CCACHE_MAXSIZE >/dev/null 2>&1
 else
-    echo "Warning: ccache tidak ditemukan, build tanpa ccache..."
+    echo "Warning: ccache not found, build without ccache..."
     export USE_CCACHE=0
 fi
 
