@@ -515,8 +515,8 @@ static int ufshcd_disable_vreg(struct device *dev, struct ufs_vreg *vreg);
 
 #if IS_ENABLED(CONFIG_DEVFREQ_GOV_SIMPLE_ONDEMAND)
 static struct devfreq_simple_ondemand_data ufshcd_ondemand_data = {
-	.upthreshold = 70,
-	.downdifferential = 65,
+	.upthreshold = 50,
+	.downdifferential = 45,
 	.simple_scaling = 1,
 };
 
