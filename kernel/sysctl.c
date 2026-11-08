@@ -214,8 +214,6 @@ extern int unaligned_dump_stack;
 extern int no_unaligned_warning;
 #endif
 
-extern int sysctl_columbina_auto_purge;
-
 #ifdef CONFIG_PROC_SYSCTL
 
 /**
@@ -1723,16 +1721,6 @@ static struct ctl_table vm_table[] = {
 		.extra1		= &zero,
 		.extra2		= &two,
 	},
-	
-	{
-    .procname    = "columbina_auto_purge",
-    .data        = &sysctl_columbina_auto_purge,
-    .maxlen      = sizeof(int),
-    .mode        = 0644,
-    .proc_handler    = proc_dointvec,
-    },
-
-	
 	{
 		.procname	= "panic_on_oom",
 		.data		= &sysctl_panic_on_oom,
