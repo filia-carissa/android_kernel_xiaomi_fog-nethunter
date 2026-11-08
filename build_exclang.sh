@@ -10,12 +10,12 @@ DEFCONFIG="vendor/fog-perf_defconfig"
 CLANG_DIR="$HOME/clang/greenforce-clang"
 export PATH="$CLANG_DIR/bin:$PATH"
 
-export KBUILD_BUILD_USER="anomaly-arc"
-export KBUILD_BUILD_HOST="Mint"
+export KBUILD_BUILD_USER="Códec"
+export KBUILD_BUILD_HOST="RIVER STONES"
 export ARCH=arm64
 export SUBARCH=arm64
 
-ZIP_NAME="RAVE-$(date +%Y%m%d-%H%M).zip"
+ZIP_NAME="BumbleBee-$(date +%Y%m%d-%H%M).zip"
 AK3_DIR="$(pwd)/../anykernel"
 
 # ====================================================
@@ -40,7 +40,7 @@ export KCFLAGS="-Wno-error -Wno-unused-variable -Wno-unused-function -Wno-pointe
 # ====================================================
 # LTO & SWAP RESOURCE TUNING (RAM 8GB + SWAP SAFEGUARD)
 # ====================================================
-export LTO_PARALLEL_JOBS=2
+export LTO_PARALLEL_JOBS=4
 sudo sysctl vm.swappiness=90 >/dev/null 2>&1
 sudo sysctl vm.vfs_cache_pressure=50 >/dev/null 2>&1
 
