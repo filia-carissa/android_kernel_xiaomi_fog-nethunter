@@ -38,6 +38,6 @@ obj-$(CONFIG_BLK_SED_OPAL)	+= sed-opal.o
 obj-$(CONFIG_BLK_INLINE_ENCRYPTION)	+= keyslot-manager.o bio-crypt-ctx.o \
 					   blk-crypto.o
 obj-$(CONFIG_BLK_INLINE_ENCRYPTION_FALLBACK)	+= blk-crypto-fallback.o
-obj-y += columbina-iosched.o
+# obj-y += columbina-iosched.o
 obj-$(CONFIG_IOSCHED_ADIOS) += adios-iosched.o
 obj-$(CONFIG_IOSCHED_ANXIETY)	+= anxiety-iosched.o
